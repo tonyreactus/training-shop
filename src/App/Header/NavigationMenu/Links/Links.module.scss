@@ -1,0 +1,11 @@
+@import "../../../../Common/Sass/Mixins.scss";
+
+.linksContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    & a {
+        @include text(14px, normal, 16px, #121212);
+        text-decoration: none;
+    }
+}
