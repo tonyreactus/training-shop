@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     width: 480px;
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
     & a {
         @include text(14px, normal, 16px, #121212);
         text-decoration: none;

@@ -11,8 +11,8 @@ const Links = () => {
                 Object
                     .keys(ERoutePath)
                     .filter((path) => path !== ERoutePath.main)
-                    .map((path) => (
-                        <Link to={RoutePathMap[path as ERoutePath]}>
+                    .map((path, index) => (
+                        <Link key={index} to={RoutePathMap[path as ERoutePath]}>
                             {RoutePathTitleMap[path as ERoutePath]}
                         </Link>
                     ))
