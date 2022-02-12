@@ -1,0 +1,16 @@
+.categoriesBannersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .womanManContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 540px;
+        @media screen and (max-width: 1300px) {
+            align-items: center;
+            min-width: 300px;
+            margin: 15px 0;
+        }
+    }
+}

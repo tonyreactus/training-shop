@@ -1,9 +1,12 @@
 import React from 'react';
+import { Banners } from './Banners/Banners';
+import { ShopAdvantages } from './ShopAdvantages/ShopAdvantages';
 
 const MainPage = () => {
     return (
         <div>
-            {"Main Page"}
+            <Banners />
+            <ShopAdvantages />
         </div>
     )
 }

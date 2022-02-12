@@ -1,5 +1,5 @@
 @mixin text($fontSize, $fontWeight, $lineHeight, $color) {
-    font-family: "Spartan";
+    font-family: "Spartan", sans-serif;
     font-style: normal;
     font-size: $fontSize;
     font-weight: $fontWeight;

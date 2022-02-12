@@ -1,5 +1,5 @@
 import React from 'react';
-import { actions } from '../../../../Const/Actions/Actions';
+import { actions } from '../../../../MockApi/Actions';
 import classes from "./Actions.module.scss"
 
 const Actions = () => {
