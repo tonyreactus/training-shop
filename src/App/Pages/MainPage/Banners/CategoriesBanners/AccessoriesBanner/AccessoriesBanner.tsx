@@ -6,6 +6,9 @@ const AccessoriesBanner = () => {
     return (
         <div className={classes.accessoriesBannerConatainer}>
             <img alt={"accessories"} src={accessoriesImg} />
+            <div className={classes.textContainer}>
+                <span>{"Accessories"}</span>
+            </div>
         </div>
     )
 }

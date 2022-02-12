@@ -6,6 +6,9 @@ const WomanBanner = () => {
     return (
         <div className={classes.womanBannerConatainer}>
             <img alt={"woman"} src={womanImg} />
+            <div className={classes.textContainer}>
+                <span>{"Women"}</span>
+            </div>
         </div>
     )
 }

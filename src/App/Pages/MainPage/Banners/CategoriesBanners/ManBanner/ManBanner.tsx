@@ -6,6 +6,9 @@ const ManBanner = () => {
     return (
         <div className={classes.manBannerConatainer}>
             <img alt={"man"} src={manImg} />
+            <div className={classes.textContainer}>
+                <span>{"Men"}</span>
+            </div>
         </div>
     )
 }

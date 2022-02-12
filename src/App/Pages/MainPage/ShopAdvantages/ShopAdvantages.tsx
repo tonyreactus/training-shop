@@ -6,8 +6,8 @@ const ShopAdvantages = () => {
     return (
         <div className={classes.shopAdvantagesContainer}>
             {
-                shopAdvanteges.map(({ name, description, image }) => (
-                    <div className={classes.advantage}>
+                shopAdvanteges.map(({ name, description, image }, index) => (
+                    <div key={index} className={classes.advantage}>
                         <div className={classes.imgContainer}>
                             <img alt={name} src={image} />
                         </div>
