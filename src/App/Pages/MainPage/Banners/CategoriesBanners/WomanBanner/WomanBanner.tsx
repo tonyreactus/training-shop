@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import womanImg from "../../../../../../Assets/Images/woman.svg";
+import womanImg from "../../../../../../Assets/Images/womanBanner.svg";
 import { ERoutePath } from '../../../../../../Const/ERoutePath';
 import { RoutePathMap } from '../../../../../../Const/RoutePathMap';
 import classes from "./WomanBanner.module.scss"

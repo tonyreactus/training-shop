@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import manImg from "../../../../../../Assets/Images/man.svg";
+import manImg from "../../../../../../Assets/Images/manBanner.svg";
 import { ERoutePath } from '../../../../../../Const/ERoutePath';
 import { RoutePathMap } from '../../../../../../Const/RoutePathMap';
 import classes from "./ManBanner.module.scss"
