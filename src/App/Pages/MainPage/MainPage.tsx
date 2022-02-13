@@ -1,5 +1,6 @@
 import React from 'react';
 import { Banners } from './Banners/Banners';
+import { LatestFromBlog } from './LatestFromBlog/LatestFromBlog';
 import { ShopAdvantages } from './ShopAdvantages/ShopAdvantages';
 
 const MainPage = () => {
@@ -7,6 +8,7 @@ const MainPage = () => {
         <div>
             <Banners />
             <ShopAdvantages />
+            <LatestFromBlog />
         </div>
     )
 }

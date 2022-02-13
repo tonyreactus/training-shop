@@ -1,0 +1,19 @@
+@import "../../../../../Common/Sass/Mixins.scss";
+
+.latestFromBlogHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+    .title {
+        @include text(22px, 600, 25px, #121212);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    .seeAll {
+        @include text(12px, 500, 13px, #121212);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        opacity: 0.6;
+    }
+}
