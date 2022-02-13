@@ -1,0 +1,117 @@
+@import "../../../../Common/Sass/Mixins.scss";
+
+.specialOfferBlock {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    height: 580px;
+    background: linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%);
+    @media screen and (max-width: 1300px) {
+        height: 400px;
+    }
+    .womanImgContainer {
+        position: absolute;
+        top: 5.8%;
+        left: 8.5%;
+        width: 311px;
+        height: 584px;
+        z-index: 1;
+        @media screen and (max-width: 1300px) {
+            display: none;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .textContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 532px;
+        height: 461px;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 1300px) {
+            max-width: 100%;
+            height: 350px;
+        }
+        .text1 {
+            @include text(12px, 600, 13px, #121212);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            opacity: 0.4;
+        }
+        .text2 {
+            @include text(26px, 600, 36px, #121212);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        .textContainer2 {
+            margin-bottom: 32px;
+            .text3 {
+                @include text(26px, 600, 36px, #121212);
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                margin-right: 7px
+            }
+            .text4 {
+                @include text(26px, 600, 36px, #E91E63);
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+            }
+        }
+        .inputContainer {
+            width: 340px;
+            height: 64px;
+            margin-bottom: 24px;
+            & input {
+                width: 100%;
+                height: 100%;
+                background: #F8F8F8;
+                border: none;
+                padding: 0;
+                text-align:center;
+                @include text(16px, 500, 18px, #121212);
+            }
+            & input:focus{
+                outline: none;
+            }
+        }
+        .buttonContainer {
+            width: 340px;
+            height: 64px;
+            & button {
+                width: 100%;
+                height: 100%;
+                background: #121212;
+                border: 2px solid #121212;
+                cursor: pointer;
+                & span {
+                    @include text(16px, 500, 18px, #FFFFFF);
+                    letter-spacing: 0.06em;
+                    text-transform: uppercase;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+    .manImgContainer {
+        position: absolute;
+        top: 7%;
+        right: 13.4%;
+        width: 219px;
+        height: 524px;
+        @media screen and (max-width: 1300px) {
+            display: none;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
