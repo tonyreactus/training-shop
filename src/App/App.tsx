@@ -8,10 +8,8 @@ import { RoutePathMap } from '../Const/RoutePathMap';
 
 const App = () => {
   return (
-
     <div className={classes.appContainer}>
       <Header />
-
       <Routes>
         <Route path={RoutePathMap[ERoutePath.main]} element={<MainPage />} />
         <Route path={RoutePathMap[ERoutePath.aboutUs]} element={<div>{"About Us Page"}</div>} />

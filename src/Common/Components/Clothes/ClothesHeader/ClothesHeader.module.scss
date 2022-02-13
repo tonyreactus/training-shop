@@ -1,0 +1,32 @@
+@import "../../../Sass/Mixins.scss";
+
+.clothesHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+    @media screen and (max-width: 940px) {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .title {
+        @include text(22px, 600, 25px, #121212);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+    }
+    .links {
+        display: flex;
+        justify-content: space-between;
+        width: 663px;
+        @media screen and (max-width: 940px) {
+            display: none;
+        }
+        span {
+            @include text(12px, 500, 13px, #121212);
+            text-decoration: none;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            opacity: 0.6;
+        }
+    }
+}
