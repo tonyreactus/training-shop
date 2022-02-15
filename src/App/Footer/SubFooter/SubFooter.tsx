@@ -4,7 +4,7 @@ import stripeImg from "../../../Assets/Images/stripe.svg";
 import aesImg from "../../../Assets/Images/aes.svg";
 import paypalImg from "../../../Assets/Images/paypal.svg";
 import visaImg from "../../../Assets/Images/visa.svg";
-// import masterCardImg from "../../../Assets/Images/masterCard.svg";
+import masterCardImg from "../../../Assets/Images/masterCard.svg";
 import discoverImg from "../../../Assets/Images/discover.svg";
 import americanExpressImg from "../../../Assets/Images/americanExpress.svg";
 
@@ -30,9 +30,9 @@ const SubFooter = () => {
                     <img alt={"visa"} src={visaImg} />
                 </div>
 
-                {/* <div className={classes.masterCard}>
+                <div className={classes.masterCard}>
                     <img alt={"masterCard"} src={masterCardImg} />
-                </div> */}
+                </div>
 
                 <div className={classes.discover}>
                     <img alt={"discover"} src={discoverImg} />
