@@ -7,6 +7,11 @@ enum ERoutePath {
     accessories = "accessories",
     blog = "blog",
     contact = "contact",
+    faqs = "faqs",
+    termsAndConditions = "termsAndConditions",
+    returnsAndExchanges = "returnsAndExchanges",
+    shippingAndDelivery = "shippingAndDelivery",
+    privacyPolicy = "privacyPolicy",
 }
 
 export { ERoutePath }

@@ -10,7 +10,14 @@ const Links = () => {
             {
                 Object
                     .keys(ERoutePath)
-                    .filter((path) => path !== ERoutePath.main)
+                    .filter(item => ![
+                        "main",
+                        "faqs",
+                        "termsAndConditions",
+                        "returnsAndExchanges",
+                        "shippingAndDelivery",
+                        "privacyPolicy"
+                    ].includes(item))
                     .map((path, index) => (
                         <Link key={index} to={RoutePathMap[path as ERoutePath]}>
                             {RoutePathTitleMap[path as ERoutePath]}

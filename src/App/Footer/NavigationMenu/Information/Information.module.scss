@@ -1,0 +1,23 @@
+@import "../../../../Common/Sass/Mixins.scss";
+
+.informationContainer {
+    display: flex;
+    flex-direction: column;
+    & span {
+        @include text(12px, 600, 13px, #121212);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 8px
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 136px;
+        & a {
+            @include text(12px, normal, 34px, #121212);
+            opacity: 0.8;
+            text-decoration: none;
+        }
+    }
+}

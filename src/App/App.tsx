@@ -5,6 +5,7 @@ import { Header } from './Header/Header';
 import { ERoutePath } from '../Const/ERoutePath';
 import { Route, Routes } from 'react-router-dom';
 import { RoutePathMap } from '../Const/RoutePathMap';
+import { Footer } from './Footer/Footer';
 
 const App = () => {
   return (
@@ -20,7 +21,13 @@ const App = () => {
         <Route path={RoutePathMap[ERoutePath.accessories]} element={<div>{"Accessories Page"}</div>} />
         <Route path={RoutePathMap[ERoutePath.blog]} element={<div>{"Blog Page"}</div>} />
         <Route path={RoutePathMap[ERoutePath.contact]} element={<div>{"Contact Page"}</div>} />
+        <Route path={RoutePathMap[ERoutePath.faqs]} element={<div>{"FAQs Page"}</div>} />
+        <Route path={RoutePathMap[ERoutePath.termsAndConditions]} element={<div>{"Terms & Conditions Page"}</div>} />
+        <Route path={RoutePathMap[ERoutePath.returnsAndExchanges]} element={<div>{"Returns & Exchanges Page"}</div>} />
+        <Route path={RoutePathMap[ERoutePath.shippingAndDelivery]} element={<div>{"Shipping & Delivery Page"}</div>} />
+        <Route path={RoutePathMap[ERoutePath.privacyPolicy]} element={<div>{"Privacy Policy Page"}</div>} />
       </Routes>
+      <Footer />
     </div>
   );
 }

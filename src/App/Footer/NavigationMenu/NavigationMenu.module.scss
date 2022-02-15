@@ -1,0 +1,11 @@
+.navigationMenuContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 6.64%;
+    @media screen and (max-width: 470px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 16px 6.64%;
+    }
+}

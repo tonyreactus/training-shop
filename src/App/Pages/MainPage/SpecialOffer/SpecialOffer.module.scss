@@ -77,9 +77,9 @@
                 padding: 0;
                 text-align:center;
                 @include text(16px, 500, 18px, #121212);
-            }
-            & input:focus{
-                outline: none;
+                &:focus{
+                    outline: none;
+                }
             }
         }
         .buttonContainer {

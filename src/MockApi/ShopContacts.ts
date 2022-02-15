@@ -5,7 +5,8 @@ const shopContacts = {
         city: "Gomel",
         street: "Lange 17"
     },
-    workingHours: "All week 24/7"
+    workingHours: "All week 24/7",
+    email: "info@clevertec.ru"
 }
 
 export { shopContacts }

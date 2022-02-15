@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "./SocialNetworksLinks.module.css";
+import classes from "./SocialNetworksLinks.module.scss";
 import facebookImg from "../../../../Assets/Images/facebook.svg";
 import twitterImg from "../../../../Assets/Images/twitter.svg"
 import instagramImg from "../../../../Assets/Images/instagram.svg";
