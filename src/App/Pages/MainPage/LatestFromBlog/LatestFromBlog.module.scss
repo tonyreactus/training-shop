@@ -1,7 +1,10 @@
 .latestFromBlogContainer {
     padding: 0 6.64%;
     margin: 57px 0 162px 0;
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1320px) {
+        margin: 80px 0;
+    }
+    @media screen and (max-width: 600px) {
         margin: 16px 0;
     }
 }

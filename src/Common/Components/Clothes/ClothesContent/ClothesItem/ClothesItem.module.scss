@@ -1,13 +1,15 @@
 @import "../../../../Sass/Mixins.scss";
 
 .clothesItemContainer {
-    width: 255px;
-    height: 378px;
+    width: 22.97%;
     margin-top: 30px;
+    @media screen and (max-width: 1320px) {
+        width: 255px;
+        height: 378px;
+    }
     .imgContainer {
         position: relative;
-        width: 255px;
-        height: 318px;
+        min-width: inherit;
         margin-bottom: 16px;
         .saleContainer {
             display: flex;

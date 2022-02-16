@@ -2,8 +2,7 @@
 
 .accessoriesBannerConatainer {
     position: relative;
-    max-width: 540px;
-    max-height: 260px;
+    width: inherit;
     & img {
         width: 100%;
         height: 100%;

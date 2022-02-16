@@ -3,23 +3,22 @@
 .latestFromBlogContentContainer {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    @media screen and (max-width: 1300px) {
-        justify-content: center;
+    width: 100%;
+    @media screen and (max-width: 1320px) {
+        flex-direction: column;
+        align-items: center;
     }
     .itemContainer {
         display: flex;
         flex-direction: column;
         position: relative;
-        @media screen and (max-width: 1300px) {
-            margin: 0 30px 110px 0;
-        }
-        @media screen and (max-width: 800px) {
-            margin: 0 0 110px 0;
+        width: 31.53%;
+        @media screen and (max-width: 1320px) {
+            margin: 0 0 140px 0;
+            width: 100%;
         }
         .imgContainer {
-            max-width: 350px;
-            max-height: 276px;
+            min-width: inherit;
             & img {
                 width: 100%;
                 height: 100%;
@@ -29,11 +28,11 @@
             display: flex;
             flex-direction: column;
             position: absolute;
-            width: 270px;
-            height: 126px;
+            min-width: 86.29%;
+            min-height: 15%;
             background: #FFFFFF;
             padding: 24px 16px;
-            top: 110%;
+            top: 100%;
             left: 50%;
             transform: translate(-50%, -50%);
             .name {
