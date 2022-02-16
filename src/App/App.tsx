@@ -6,6 +6,8 @@ import { ERoutePath } from '../Const/ERoutePath';
 import { Route, Routes } from 'react-router-dom';
 import { RoutePathMap } from '../Const/RoutePathMap';
 import { Footer } from './Footer/Footer';
+import { MenPage } from './Pages/MenPage/MenPage';
+import { WomenPage } from './Pages/WomenPage/WomenPage';
 
 const App = () => {
   return (
@@ -14,8 +16,8 @@ const App = () => {
       <Routes>
         <Route path={RoutePathMap[ERoutePath.main]} element={<MainPage />} />
         <Route path={RoutePathMap[ERoutePath.aboutUs]} element={<div>{"About Us Page"}</div>} />
-        <Route path={RoutePathMap[ERoutePath.women]} element={<div>{"Women Page"}</div>} />
-        <Route path={RoutePathMap[ERoutePath.men]} element={<div>{"Men Page"}</div>} />
+        <Route path={RoutePathMap[ERoutePath.women]} element={<WomenPage />} />
+        <Route path={RoutePathMap[ERoutePath.men]} element={<MenPage />} />
         <Route path={RoutePathMap[ERoutePath.women]} element={<div>{"Women Page"}</div>} />
         <Route path={RoutePathMap[ERoutePath.beauty]} element={<div>{"Beauty Page"}</div>} />
         <Route path={RoutePathMap[ERoutePath.accessories]} element={<div>{"Accessories Page"}</div>} />

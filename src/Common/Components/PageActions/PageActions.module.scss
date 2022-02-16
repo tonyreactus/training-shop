@@ -1,0 +1,53 @@
+@import "../../Sass/Mixins.scss";
+
+.pageActionsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 6.64%;
+    height: 66px;
+    .filterContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 89.66px;
+        .imgContainer {
+            width: 21.33px;
+            height: 21.33px;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & span {
+            @include text(13px, 500, 15px, #121212);
+            opacity: 0.6;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+    }
+    .viewListsContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 64px;
+        .viewList1 {
+            position: relative;
+            top: -3px;
+            width: 16px;
+            height: 12px;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .viewList2 {
+            width: 16px;
+            height: 16px;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

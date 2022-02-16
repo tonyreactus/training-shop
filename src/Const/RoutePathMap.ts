@@ -17,7 +17,7 @@ const RoutePathMap: Record<ERoutePath, string> = {
 }
 
 const RoutePathTitleMap: Record<ERoutePath, string> = {
-    [ERoutePath.main]: "Main",
+    [ERoutePath.main]: "Home",
     [ERoutePath.aboutUs]: "About Us",
     [ERoutePath.women]: "Women",
     [ERoutePath.men]: "Men",
