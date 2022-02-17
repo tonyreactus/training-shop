@@ -7,7 +7,7 @@ import { mensClothes } from '../../../MockApi/ClothesData';
 
 const MenPage = () => {
     return (
-        <div data-test-id={"prodcuts-page-men"}>
+        <div data-test-id={"products-page-men"}>
             <PageHeader title={"Men"} />
             <PageActions />
             <ClothesContet clothesData={mensClothes} type={"men"} />
