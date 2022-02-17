@@ -7,8 +7,10 @@ import { ProductInfo } from './ProductInfo/ProductInfo';
 const Product = () => {
     return (
         <div className={classes.productInfoContainer}>
-            <AdditionalPhotos />
-            <MainPhoto />
+            <div className={classes.photosContain}>
+                <AdditionalPhotos />
+                <MainPhoto />
+            </div>
             <ProductInfo />
         </div>
     )

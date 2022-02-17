@@ -9,4 +9,13 @@
         flex-direction: column;
         align-items: center;
     }
+    .photosContain {
+        display: flex;
+        justify-content: space-between;
+        width: 50.27%;
+        @media screen and (max-width: 1320px) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
 }

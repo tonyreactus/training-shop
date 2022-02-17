@@ -1,0 +1,98 @@
+@import "../../../../../../Common/Sass/Mixins.scss";
+
+.reviewsContainer {
+    .title {
+        margin: 32px 0;
+        & span {
+            @include text(12px, 600, 18px, #121212);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+    }
+    .ratingContaiiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .starsContainer {
+            display: flex;
+            align-items: center;
+            .stars {
+                position: relative;
+                display: flex;
+                margin-right: 10.82px;
+                bottom: 3px;
+                .imgContainer {
+                    width: 16.36px;
+                    height: 15.66px;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            & span {
+                @include text(11px, 500, 18px, #121212);
+                opacity: 0.6;
+            }
+        }
+        .writeReviewContainer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 26px;
+            .imgContainer {
+                position: relative;
+                bottom: 3px;
+                margin-right: 9px;
+                width: 18px;
+                height: 14px;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.6;
+                }
+            }
+            & span {
+                @include text(12px, 500, 18px, #121212);
+                opacity: 0.6;
+            }
+        }
+    }
+    .reviewContainer {
+        .reviewHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            .author {
+                & span {
+                    @include text(14px, 500, 22px, #121212);
+                }
+            }
+            .rate {
+                display: flex;
+                .imgContainer {
+                    position: relative;
+                    bottom: 6px;
+                    width: 10.41px;
+                    height: 9.97px;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .review {
+            margin-bottom: 32px;
+            & span {
+                @include text(14px, normal, 22px, #121212);
+                opacity: 0.8;
+                text-align: justify;
+            }
+        }
+    }
+    .border {
+        border-bottom: 2px solid #E6E6E6;
+        width: 100%;
+    }
+}
