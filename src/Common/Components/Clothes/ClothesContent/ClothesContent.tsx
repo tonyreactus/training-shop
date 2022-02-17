@@ -15,7 +15,7 @@ const ClothesContet: React.FC<TClothesContentProps> = ({ clothesData, type }) =>
                 clothesData.map((clothesItem, index) => (
                         <ClothesItem
                             key={index}
-                            index={index}
+                            index={index + 1}
                             type={type}
                             {...clothesItem}
                         />

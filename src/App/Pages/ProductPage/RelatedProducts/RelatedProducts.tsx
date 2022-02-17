@@ -30,7 +30,7 @@ const RelatedProducts: React.FC<IRelatedProductsProps> = ({ type }) => {
                     relatedProducts.map((productData, index) => (
                         <ClothesItem
                             key={index}
-                            index={index}
+                            index={index + 1}
                             type={type}
                             {...productData}
                         />
