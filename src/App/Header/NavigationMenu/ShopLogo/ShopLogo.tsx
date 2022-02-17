@@ -6,11 +6,9 @@ import { RoutePathMap } from '../../../../Const/RoutePathMap';
 
 const ShopLogo = () => {
     return (
-        <div>
-            <Link to={RoutePathMap[ERoutePath.main]}>
-                <img alt={"logo"} src={logoImg} />
-            </Link>
-        </div>
+        <Link to={RoutePathMap[ERoutePath.main]} data-test-id={"header-logo-link"}>
+            <img alt={"logo"} src={logoImg} />
+        </Link>
     )
 }
 

@@ -5,7 +5,7 @@ import { SubFooter } from './SubFooter/SubFooter';
 
 const Footer = React.memo(() => {
     return (
-        <div>
+        <div data-test-id={"footer"}>
             <Header />
             <NavigationMenu />
             <SubFooter />

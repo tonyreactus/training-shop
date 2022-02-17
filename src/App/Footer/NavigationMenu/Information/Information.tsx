@@ -9,10 +9,10 @@ const Information = () => {
         <div className={classes.informationContainer}>
             <span>{"Information"}</span>
             <div className={classes.links}>
-                <Link to={RoutePathMap[ERoutePath.aboutUs]}>{RoutePathTitleMap.aboutUs}</Link>
-                <Link to={RoutePathMap[ERoutePath.contact]}>{RoutePathTitleMap.contact}</Link>
-                <Link to={RoutePathMap[ERoutePath.blog]}>{RoutePathTitleMap.blog}</Link>
-                <Link to={RoutePathMap[ERoutePath.faqs]}>{RoutePathTitleMap.faqs}</Link>
+                <Link to={RoutePathMap[ERoutePath.aboutUs]} data-test-id={`footer-nav-link-${ERoutePath.aboutUs}`}>{RoutePathTitleMap.aboutUs}</Link>
+                <Link to={RoutePathMap[ERoutePath.contact]} data-test-id={`footer-nav-link-${ERoutePath.contact}`}>{RoutePathTitleMap.contact}</Link>
+                <Link to={RoutePathMap[ERoutePath.blog]} data-test-id={`footer-nav-link-${ERoutePath.blog}`}>{RoutePathTitleMap.blog}</Link>
+                <Link to={RoutePathMap[ERoutePath.faqs]} data-test-id={`footer-nav-link-${ERoutePath.faqs}`}>{RoutePathTitleMap.faqs}</Link>
             </div>
         </div>
     )

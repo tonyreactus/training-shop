@@ -9,7 +9,7 @@ interface IProductPageProps {
 
 const ProductPage: React.FC<IProductPageProps> = ({ type }) => {
     return (
-        <div>
+        <div data-test-id={`product-page-${type}`}>
             <ProductPageHeader />
             <Product />
             <RelatedProducts type={type} />

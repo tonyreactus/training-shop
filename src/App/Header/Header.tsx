@@ -4,7 +4,7 @@ import { ShopInfo } from './ShopInfo/ShopInfo';
 
 const Header = () => {
     return (
-        <div>
+        <div data-test-id={"header"}>
             <ShopInfo />
             <NavigationMenu />
         </div>

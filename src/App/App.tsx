@@ -12,7 +12,7 @@ import { ProductPage } from './Pages/ProductPage/ProductPage';
 
 const App = () => {
   return (
-    <div className={classes.appContainer}>
+    <div className={classes.appContainer} data-test-id={"app"}>
       <Header />
       <Routes>
         <Route path={RoutePathMap[ERoutePath.main]} element={<MainPage />} />

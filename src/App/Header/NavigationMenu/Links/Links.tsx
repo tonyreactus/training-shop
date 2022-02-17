@@ -6,7 +6,7 @@ import classes from "./Links.module.scss"
 
 const Links = () => {
     return (
-        <div className={classes.linksContainer}>
+        <div className={classes.linksContainer} data-test-id={"menu"}>
             {
                 Object
                     .keys(ERoutePath)
@@ -19,7 +19,7 @@ const Links = () => {
                         "privacyPolicy"
                     ].includes(item))
                     .map((path, index) => (
-                        <Link key={index} to={RoutePathMap[path as ERoutePath]}>
+                        <Link key={index} to={RoutePathMap[path as ERoutePath]} data-test-id={`menu-link-${path}`}>
                             {RoutePathTitleMap[path as ERoutePath]}
                         </Link>
                     ))

@@ -21,7 +21,7 @@ const ClothesItem: React.FC<TClothesItemProps> = ({
     priceWithSale
 }) => {
     return (
-        <Link to={`/${type}/${index}`} className={classes.clothesItemContainer}>
+        <Link to={`/${type}/${index}`} className={classes.clothesItemContainer} data-test-id={`clothes-card-${type}`}>
                 <div className={classes.imgContainer}>
                     <img alt={"good"} src={image} />
                     {sale && <div className={classes.saleContainer}><span>{sale}</span></div>}

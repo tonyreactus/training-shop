@@ -9,10 +9,10 @@ const UsefulLinks = () => {
         <div className={classes.usefulLinksContainer}>
             <span>{"Useful links"}</span>
             <div className={classes.links}>
-                <Link to={RoutePathMap[ERoutePath.termsAndConditions]}>{RoutePathTitleMap.termsAndConditions}</Link>
-                <Link to={RoutePathMap[ERoutePath.returnsAndExchanges]}>{RoutePathTitleMap.returnsAndExchanges}</Link>
-                <Link to={RoutePathMap[ERoutePath.shippingAndDelivery]}>{RoutePathTitleMap.shippingAndDelivery}</Link>
-                <Link to={RoutePathMap[ERoutePath.privacyPolicy]}>{RoutePathTitleMap.privacyPolicy}</Link>
+                <Link to={RoutePathMap[ERoutePath.termsAndConditions]} data-test-id={`footer-nav-link-${ERoutePath.termsAndConditions}`}>{RoutePathTitleMap.termsAndConditions}</Link>
+                <Link to={RoutePathMap[ERoutePath.returnsAndExchanges]} data-test-id={`footer-nav-link-${ERoutePath.returnsAndExchanges}`}>{RoutePathTitleMap.returnsAndExchanges}</Link>
+                <Link to={RoutePathMap[ERoutePath.shippingAndDelivery]} data-test-id={`footer-nav-link-${ERoutePath.shippingAndDelivery}`}>{RoutePathTitleMap.shippingAndDelivery}</Link>
+                <Link to={RoutePathMap[ERoutePath.privacyPolicy]} data-test-id={`footer-nav-link-${ERoutePath.privacyPolicy}`}>{RoutePathTitleMap.privacyPolicy}</Link>
             </div>
         </div>
     )
