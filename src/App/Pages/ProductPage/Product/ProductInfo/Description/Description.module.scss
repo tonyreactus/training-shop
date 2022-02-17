@@ -1,0 +1,17 @@
+@import "../../../../../../Common/Sass/Mixins.scss";
+
+.descriptionContainer {
+    display: flex;
+    align-items: center;
+    height: 82px;
+    border-bottom: 2px solid #E6E6E6;
+    @media screen and (max-width: 660px) {
+        justify-content: center;
+    }
+    & span {
+        @include text(12px, 600, 18px, #121212);
+        opacity: 0.6;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+}

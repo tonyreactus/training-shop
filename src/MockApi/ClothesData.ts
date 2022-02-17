@@ -14,6 +14,10 @@ import man5Img from "../Assets/Images/man5.svg"
 import man6Img from "../Assets/Images/man6.svg"
 import man7Img from "../Assets/Images/man7.svg"
 import man8Img from "../Assets/Images/man8.svg"
+import related1Img from "../Assets/Images/related1.svg"
+import related2Img from "../Assets/Images/related2.svg"
+import related3Img from "../Assets/Images/related3.svg"
+import related4Img from "../Assets/Images/related4.svg"
 
 type TMoney = {
     currency: string,
@@ -184,8 +188,48 @@ const mensClothes: TClothesItem[] = [
     },
 ]
 
+const relatedProducts: TClothesItem[] = [
+    {
+        name: "Men's tracksuit Q109",
+        price: {
+            currency: "$",
+            amount: "30.00"
+        },
+        image: related1Img,
+        rating: 4
+    },
+    {
+        name: "Men's tracksuit Q109",
+        price: {
+            currency: "$",
+            amount: "30.00"
+        },
+        image: related2Img,
+        rating: 4
+    },
+    {
+        name: "Men's tracksuit Q109",
+        price: {
+            currency: "$",
+            amount: "30.00"
+        },
+        image: related3Img,
+        rating: 4
+    },
+    {
+        name: "Men's tracksuit Q109",
+        price: {
+            currency: "$",
+            amount: "30.00"
+        },
+        image: related4Img,
+        rating: 4
+    },
+]
+
 export {
     GENERAL_STAR_COUNT,
     womensClothes,
-    mensClothes
+    mensClothes,
+    relatedProducts
 }

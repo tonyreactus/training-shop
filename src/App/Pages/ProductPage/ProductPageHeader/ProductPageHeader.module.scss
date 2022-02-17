@@ -1,0 +1,122 @@
+@import "../../../../Common/Sass/Mixins.scss";
+
+.pageHeaderContainer {
+    padding: 0 6.64%;
+    background: #F8F8F8;
+    .navigationContainer {
+        display: flex;
+        justify-content: space-between;
+        .links {
+            display: flex;
+            justify-content: space-between;
+            & a {
+                text-decoration: none;
+            }
+            .parentLink {
+                @include text(11px, 500, 18px, #121212);
+                opacity: 0.6;
+            }
+            .arrow1ImgContainer {
+                width: 9px;
+                height: 18px;
+                margin: 0 6px;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.6
+                }
+            }
+            .arrow2ImgContainer {
+                width: 9px;
+                height: 18px;
+                margin: 0 6px;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & span {
+                @include text(11px, 500, 18px, #121212);
+            }
+        }
+        .shareContainer {
+            display: flex;
+            justify-content: space-between;
+            width: 59.2px;
+            .imgContainer {
+                width: 14.4px;
+                height: 14.4px;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.6
+                }
+            }
+            .text {
+                @include text(11px, 500, 18px, #121212);
+                opacity: 0.6;
+            }
+        }
+    }
+    .titleContainer {
+        min-height: 70px;
+        @include text(26px, 600, 36px, #121212);
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    .additionalInfo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+        @media screen and (max-width: 540px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .ratingInfo {
+            display: flex;
+            align-items: center;
+            .stars {
+                display: flex;
+                align-items: center;
+                position: relative;
+                bottom: 8px;
+                margin-right: 6.8px;
+                .imgContainer {
+                    width: 10.41px;
+                    height: 9.97px;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            & span {
+                @include text(11px, 500, 18px, #121212);
+                opacity: 0.6;
+            }
+        }
+        .parameters {
+            display: flex;
+            align-items: center;
+            .sku {
+                margin-right: 24px;
+                .key {
+                    @include text(11px, 500, 18px, #121212);
+                    opacity: 0.6
+                }
+                .value{
+                    @include text(11px, bold, 18px, #121212);
+                }
+            }
+            .availability {
+                .key {
+                    @include text(11px, 500, 18px, #121212);
+                    opacity: 0.6
+                }
+                .value{
+                    @include text(11px, bold, 18px, #121212);
+                }
+            }
+        }
+    }
+}

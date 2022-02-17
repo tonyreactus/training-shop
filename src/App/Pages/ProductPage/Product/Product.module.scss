@@ -1,0 +1,12 @@
+.productInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 32px 0 104px 0;
+    width: inherit;
+    padding: 0 6.64%;
+    @media screen and (max-width: 1320px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}

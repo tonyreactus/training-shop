@@ -4,18 +4,21 @@ import { ClothesItem } from './ClothesItem/ClothesItem';
 import classes from "./ClothesContent.module.scss"
 
 type TClothesContentProps = {
-    clothesData: TClothesItem[]
+    clothesData: TClothesItem[],
+    type: "women" | "men"
 }
 
-const ClothesContet: React.FC<TClothesContentProps> = ({ clothesData }) => {
+const ClothesContet: React.FC<TClothesContentProps> = ({ clothesData, type }) => {
     return (
         <div className={classes.clothesContetContainer}>
             {
                 clothesData.map((clothesItem, index) => (
-                    <ClothesItem
-                        key={index}
-                        {...clothesItem}
-                    />
+                        <ClothesItem
+                            key={index}
+                            index={index}
+                            type={type}
+                            {...clothesItem}
+                        />
                 ))
             }
         </div>

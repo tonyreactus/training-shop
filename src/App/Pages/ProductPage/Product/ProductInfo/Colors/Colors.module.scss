@@ -1,0 +1,35 @@
+@import "../../../../../../Common/Sass/Mixins.scss";
+
+.colorsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    height: 98px;
+    .parameter {
+        margin-bottom: 16px;
+        .key {
+            @include text(12px, 600, 18px, #121212);
+            opacity: 0.6;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        .value {
+            @include text(12px, 600, 18px, #121212);
+        }
+    }
+    .images {
+        display: flex;
+        justify-content: space-between;
+        width: 58.23%;
+        @media screen and (max-width: 1320px) {
+            width: 100%;
+        }
+        .imgContainer {
+            min-width: 12.26%;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

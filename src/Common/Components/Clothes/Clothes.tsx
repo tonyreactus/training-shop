@@ -18,7 +18,7 @@ const Clothes: React.FC<TClothesProps> = ({
     return (
         <div className={classes.clothesBlock}>
             <ClothesHeader title={title} type={type} />
-            <ClothesContet clothesData={clothesData} /> 
+            <ClothesContet clothesData={clothesData} type={type} /> 
         </div>
     )
 }
